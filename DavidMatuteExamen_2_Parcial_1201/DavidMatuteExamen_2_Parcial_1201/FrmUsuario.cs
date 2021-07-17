@@ -30,14 +30,14 @@ namespace DavidMatuteExamen_2_Parcial_1201
                 txt_Usuario.Focus();
                 return;
             }
-            errorProvider1.SetError(txt_Usuario, " ");
+            errorProvider1.SetError(txt_Usuario, "");
 
-            if (txt_Contrasenia.Text == " " || txt_Contrasenia.Text != "1914reyna".ToString())
+            if (txt_Contrasenia.Text == "" || txt_Contrasenia.Text != "1914reyna".ToString())
             {
                 errorProvider1.SetError(txt_Contrasenia, "Campo obligatorio, Contraseña incorrecta!!!, Ingrese su contraseña correcta");
                 return;
             }
-            errorProvider1.SetError(txt_Contrasenia, " ");
+            errorProvider1.SetError(txt_Contrasenia, "");
 
             FrmPrincipal Formulario = new FrmPrincipal();
             this.Hide();

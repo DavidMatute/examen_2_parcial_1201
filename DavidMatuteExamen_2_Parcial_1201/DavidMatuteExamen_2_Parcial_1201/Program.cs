@@ -16,7 +16,7 @@ namespace DavidMatuteExamen_2_Parcial_1201
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmPrincipal());
+            Application.Run(new FrmUsuario());
         }
     }
 }
