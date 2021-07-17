@@ -89,7 +89,7 @@ namespace DavidMatuteExamen_2_Parcial_1201
         {
           
             MessageBoxButtons botones = MessageBoxButtons.YesNo;
-            DialogResult respuesta = MessageBox.Show("Desea confirmar la cacelación de la compra", "Confirmación",
+            DialogResult respuesta = MessageBox.Show("Desea confirmar la cancelación de la compra", "Confirmación de venta",
                             botones, MessageBoxIcon.Question);
             
             if (respuesta == DialogResult.Yes)
