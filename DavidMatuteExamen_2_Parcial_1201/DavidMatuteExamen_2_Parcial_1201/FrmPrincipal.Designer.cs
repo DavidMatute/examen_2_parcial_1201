@@ -52,6 +52,10 @@
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.listBox2 = new System.Windows.Forms.ListBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btn_Confirmar = new System.Windows.Forms.Button();
+            this.btn_Cancelar = new System.Windows.Forms.Button();
+            this.btn_Limpiar = new System.Windows.Forms.Button();
+            this.btn_Salir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -69,8 +73,9 @@
             // txt_Total_Pagar
             // 
             this.txt_Total_Pagar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Total_Pagar.Location = new System.Drawing.Point(646, 220);
+            this.txt_Total_Pagar.Location = new System.Drawing.Point(610, 220);
             this.txt_Total_Pagar.Name = "txt_Total_Pagar";
+            this.txt_Total_Pagar.ReadOnly = true;
             this.txt_Total_Pagar.Size = new System.Drawing.Size(76, 22);
             this.txt_Total_Pagar.TabIndex = 45;
             // 
@@ -87,8 +92,9 @@
             // txt_Descuento
             // 
             this.txt_Descuento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Descuento.Location = new System.Drawing.Point(646, 170);
+            this.txt_Descuento.Location = new System.Drawing.Point(610, 170);
             this.txt_Descuento.Name = "txt_Descuento";
+            this.txt_Descuento.ReadOnly = true;
             this.txt_Descuento.Size = new System.Drawing.Size(76, 22);
             this.txt_Descuento.TabIndex = 43;
             // 
@@ -96,7 +102,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(498, 176);
+            this.label10.Location = new System.Drawing.Point(498, 173);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(76, 16);
             this.label10.TabIndex = 42;
@@ -105,8 +111,9 @@
             // txt_Subtotal
             // 
             this.txt_Subtotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Subtotal.Location = new System.Drawing.Point(646, 113);
+            this.txt_Subtotal.Location = new System.Drawing.Point(610, 116);
             this.txt_Subtotal.Name = "txt_Subtotal";
+            this.txt_Subtotal.ReadOnly = true;
             this.txt_Subtotal.Size = new System.Drawing.Size(76, 22);
             this.txt_Subtotal.TabIndex = 40;
             // 
@@ -259,7 +266,7 @@
             this.listBox2.FormattingEnabled = true;
             this.listBox2.Location = new System.Drawing.Point(474, 87);
             this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(285, 173);
+            this.listBox2.Size = new System.Drawing.Size(285, 186);
             this.listBox2.TabIndex = 41;
             // 
             // dataGridView1
@@ -267,14 +274,60 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(41, 397);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(718, 298);
+            this.dataGridView1.Size = new System.Drawing.Size(866, 298);
             this.dataGridView1.TabIndex = 46;
+            // 
+            // btn_Confirmar
+            // 
+            this.btn_Confirmar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Confirmar.Location = new System.Drawing.Point(800, 87);
+            this.btn_Confirmar.Name = "btn_Confirmar";
+            this.btn_Confirmar.Size = new System.Drawing.Size(107, 48);
+            this.btn_Confirmar.TabIndex = 47;
+            this.btn_Confirmar.Text = "Confirmar";
+            this.btn_Confirmar.UseVisualStyleBackColor = true;
+            this.btn_Confirmar.Click += new System.EventHandler(this.btn_Confirmar_Click);
+            // 
+            // btn_Cancelar
+            // 
+            this.btn_Cancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Cancelar.Location = new System.Drawing.Point(800, 171);
+            this.btn_Cancelar.Name = "btn_Cancelar";
+            this.btn_Cancelar.Size = new System.Drawing.Size(107, 48);
+            this.btn_Cancelar.TabIndex = 48;
+            this.btn_Cancelar.Text = "Cancelar";
+            this.btn_Cancelar.UseVisualStyleBackColor = true;
+            // 
+            // btn_Limpiar
+            // 
+            this.btn_Limpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Limpiar.Location = new System.Drawing.Point(800, 256);
+            this.btn_Limpiar.Name = "btn_Limpiar";
+            this.btn_Limpiar.Size = new System.Drawing.Size(107, 48);
+            this.btn_Limpiar.TabIndex = 49;
+            this.btn_Limpiar.Text = "Limpiar";
+            this.btn_Limpiar.UseVisualStyleBackColor = true;
+            this.btn_Limpiar.Click += new System.EventHandler(this.btn_Limpiar_Click);
+            // 
+            // btn_Salir
+            // 
+            this.btn_Salir.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Salir.Location = new System.Drawing.Point(800, 337);
+            this.btn_Salir.Name = "btn_Salir";
+            this.btn_Salir.Size = new System.Drawing.Size(107, 48);
+            this.btn_Salir.TabIndex = 50;
+            this.btn_Salir.Text = "Salir";
+            this.btn_Salir.UseVisualStyleBackColor = true;
             // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 729);
+            this.ClientSize = new System.Drawing.Size(1033, 729);
+            this.Controls.Add(this.btn_Salir);
+            this.Controls.Add(this.btn_Limpiar);
+            this.Controls.Add(this.btn_Cancelar);
+            this.Controls.Add(this.btn_Confirmar);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.txt_Total_Pagar);
             this.Controls.Add(this.label11);
@@ -336,5 +389,9 @@
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.ListBox listBox2;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btn_Confirmar;
+        private System.Windows.Forms.Button btn_Cancelar;
+        private System.Windows.Forms.Button btn_Limpiar;
+        private System.Windows.Forms.Button btn_Salir;
     }
 }
